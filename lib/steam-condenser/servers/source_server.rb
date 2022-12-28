@@ -3,6 +3,8 @@
 #
 # Copyright (c) 2008-2013, Sebastian Staudt
 
+require 'active_support/multibyte/chars'
+require 'active_support/multibyte/unicode'
 require 'steam-condenser/error/rcon_ban'
 require 'steam-condenser/error/rcon_no_auth'
 require 'steam-condenser/servers/game_server'
@@ -116,7 +118,7 @@ module SteamCondenser
           response << response_packet.response
         end while is_multi && !(response[-2] == '' && response[-1] == '')
 
-        response.join('').strip
+        ActiveSupport::Multibyte::Chars.new(response.join('')).tidy_bytes.strip
       end
 
     end
