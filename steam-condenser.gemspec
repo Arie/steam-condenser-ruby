@@ -13,11 +13,13 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.0'
 
+  s.add_dependency 'activesupport', '>= 4.2'
   s.add_dependency 'multi_json', '~> 1.6'
   s.add_dependency 'multi_xml', '~> 0.5'
+  s.add_dependency 'rexml', '~> 3.2'
 
   s.add_development_dependency 'mocha', '~> 1.1'
-  s.add_development_dependency 'rake', '~> 10.4'
+  s.add_development_dependency 'rake', '~> 12.3'
   s.add_development_dependency 'shoulda-context', '~> 1.2'
   s.add_development_dependency 'test-unit', '~> 3.0'
   s.add_development_dependency 'yard', '~> 0.8'
