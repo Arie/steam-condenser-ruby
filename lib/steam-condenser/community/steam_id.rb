@@ -36,11 +36,6 @@ module SteamCondenser::Community
     # @return [String] The custom URL of this Steam ID
     attr_reader :custom_url
 
-    # Returns the groups this user is a member of
-    #
-    # @return [Array<SteamGroup>] The groups this user is a member of
-    attr_reader :groups
-
     # Returns the location of the user
     #
     # @return [String] The location of the user
