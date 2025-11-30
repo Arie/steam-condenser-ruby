@@ -38,7 +38,7 @@ class TestStringIO < Test::Unit::TestCase
     should 'provide `#signed_long`' do
       @io = StringIO.new "   \255"
 
-      assert_equal -1390403552, @io.signed_long
+      assert_equal(-1390403552, @io.signed_long)
       assert_equal 0, @io.remaining
     end
 

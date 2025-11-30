@@ -55,7 +55,7 @@ module SteamCondenser
       #         for this player
       # @see .player_status_attributes
       def self.split_player_status(attributes, player_status)
-        player_status.sub! /^\d+ +/, '' if attributes.first != :userid
+        player_status.sub!(/^\d+ +/, '') if attributes.first != :userid
 
         first_quote = player_status.index '"'
         last_quote  = player_status.rindex '"'

@@ -97,12 +97,12 @@ module SteamCondenser::Servers::Sockets
       rcon_send "rcon #@rcon_challenge #{password} #{command}"
       if @is_hltv
         begin
-          response = reply.response
+          response = reply.response.dup
         rescue SteamCondenser::Error::Timeout
-          response = ''
+          response = String.new
         end
       else
-        response = reply.response
+        response = reply.response.dup
       end
 
       if response.strip == 'Bad rcon_password.'

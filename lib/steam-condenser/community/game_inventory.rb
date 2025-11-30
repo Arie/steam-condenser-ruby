@@ -88,10 +88,10 @@ module SteamCondenser::Community
           cacheable_new = cacheable_new.bind TF2Inventory
         else
           cacheable_new = cacheable_new.bind GameInventory
-          return cacheable_new.call app_id, *args
+          return cacheable_new.call(app_id, *args)
       end
 
-      cacheable_new.call *args
+      cacheable_new.call(*args)
     end
 
     # Sets the language the schema should be fetched in (default is: `'en'`)

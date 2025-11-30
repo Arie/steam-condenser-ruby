@@ -94,7 +94,7 @@ module SteamCondenser::Servers::Sockets
 
       remaining_bytes = @buffer.long
 
-      packet_data = ''
+      packet_data = String.new
       begin
         received_bytes = receive_packet remaining_bytes
         remaining_bytes -= received_bytes

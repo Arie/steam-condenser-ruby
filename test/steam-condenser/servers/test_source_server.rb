@@ -60,7 +60,7 @@ class TestSourceServer < Test::Unit::TestCase
 
     should 'fail to authenticate if the wrong request ID is returned' do
       reply = mock
-      reply.expects(:request_id).returns -1
+      reply.expects(:request_id).returns(-1)
 
       rcon_socket = mock
       rcon_socket.expects(:send_packet).with { |packet| packet.is_a? Servers::Packets::RCON::RCONAuthRequest }

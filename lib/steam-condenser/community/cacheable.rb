@@ -73,7 +73,7 @@ module SteamCondenser::Community
       # @return [Boolean] `true` if the object with the given ID is already
       #         cached
       def cached?(id)
-        id.downcase! if id.is_a? String
+        id = id.downcase if id.is_a? String
         cache.key?(id)
       end
 
@@ -185,7 +185,7 @@ module SteamCondenser::Community
         id.is_a?(Array) ? id.map(&values) : cache_id_value(id)
       end
 
-      self.class.send(:cache_ids).map &values
+      self.class.send(:cache_ids).map(&values)
     end
 
     # Returns the value for the ID

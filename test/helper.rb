@@ -10,7 +10,7 @@ Coveralls.wear!
 
 require 'test/unit'
 
-require 'mocha/setup'
+require 'mocha/test_unit'
 require 'shoulda-context'
 
 $LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')

@@ -102,7 +102,7 @@ module SteamCondenser
         rescue
           raise $! if rotate_ip
           log.info "Request failed, retrying for #@ip_address..."
-          failsafe &proc
+          failsafe(&proc)
         end
       end
 

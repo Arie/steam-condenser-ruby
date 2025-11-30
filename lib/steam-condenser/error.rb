@@ -3,13 +3,12 @@
 #
 # Copyright (c) 2008-2013, Sebastian Staudt
 
-require 'steam-condenser'
-
 # This error class is used as a base class for all errors related to Steam
 # Condenser's operation
 #
 # @author Sebastian Staudt
-class SteamCondenser::Error < StandardError
+module SteamCondenser
+  class Error < StandardError
 
   # Returns the exception that caused this error
   #
@@ -25,4 +24,5 @@ class SteamCondenser::Error < StandardError
     @cause = cause
   end
 
+  end
 end
