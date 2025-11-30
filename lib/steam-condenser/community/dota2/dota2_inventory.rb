@@ -4,7 +4,6 @@
 # Copyright (c) 2012-2014, Sebastian Staudt
 
 require 'steam-condenser/community/dota2/dota2_item'
-require 'steam-condenser/community/game_inventory'
 
 module SteamCondenser::Community
 

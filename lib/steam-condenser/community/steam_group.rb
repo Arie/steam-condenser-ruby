@@ -4,7 +4,6 @@
 # Copyright (c) 2008-2013, Sebastian Staudt
 
 require 'steam-condenser/community/cacheable'
-require 'steam-condenser/community/steam_id'
 require 'steam-condenser/community/xml_data'
 require 'steam-condenser/error'
 

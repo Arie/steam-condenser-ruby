@@ -3,7 +3,6 @@
 #
 # Copyright (c) 2011-2014, Sebastian Staudt
 
-require 'steam-condenser/community/game_inventory'
 require 'steam-condenser/community/portal2/portal2_item'
 
 module SteamCondenser::Community

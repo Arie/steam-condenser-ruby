@@ -5,6 +5,9 @@
 
 require 'steam-condenser/servers'
 
+# Load base classes first to avoid circular require warnings
+require 'steam-condenser/servers/master_server'
+
 path = File.dirname __FILE__
 files = Dir.glob(File.join(path, '**', '*.rb'))
 (files - [__FILE__]).each do |file|

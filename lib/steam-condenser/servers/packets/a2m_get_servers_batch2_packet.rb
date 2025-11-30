@@ -3,7 +3,6 @@
 #
 # Copyright (c) 2008-2012, Sebastian Staudt
 
-require 'steam-condenser/servers/master_server'
 require 'steam-condenser/servers/packets/base_packet'
 
 module SteamCondenser::Servers::Packets

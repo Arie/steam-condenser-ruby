@@ -3,7 +3,6 @@
 #
 # Copyright (c) 2010-2014, Sebastian Staudt
 
-require 'steam-condenser/community/game_inventory'
 require 'steam-condenser/community/tf2/tf2_item'
 
 module SteamCondenser::Community

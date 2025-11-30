@@ -5,6 +5,11 @@
 
 require 'steam-condenser/community'
 
+require 'steam-condenser/community/steam_id'
+require 'steam-condenser/community/steam_group'
+require 'steam-condenser/community/game_stats_schema'
+require 'steam-condenser/community/game_inventory'
+
 path = File.dirname __FILE__
 files = Dir.glob(File.join(path, '**', '*.rb'))
 (files - [__FILE__]).each do |file|

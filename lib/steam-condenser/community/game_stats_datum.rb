@@ -3,8 +3,6 @@
 #
 # Copyright (c) 2012-2013, Sebastian Staudt
 
-require 'steam-condenser/community/game_stats_schema'
-
 module SteamCondenser::Community
 
   class GameStatsDatum
