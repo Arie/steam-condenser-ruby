@@ -3,7 +3,6 @@
 #
 # Copyright (c) 2008-2015, Sebastian Staudt
 
-require 'multi_json'
 
 require 'steam-condenser/community/web_api'
 

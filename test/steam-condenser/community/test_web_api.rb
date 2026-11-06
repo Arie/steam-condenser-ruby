@@ -34,7 +34,7 @@ class TestWebApi < Test::Unit::TestCase
       data = mock
       Community::WebApi.expects(:get).with(:json, 'interface', 'method', 2, test: 'param').
         returns data
-      MultiJson.expects(:load).with(data, { symbolize_keys: true }).
+      JSON.expects(:parse).with(data, { symbolize_names: true }).
         returns({ result: { status: 1 }})
 
       assert_equal({ result: { status: 1 }}, Community::WebApi.json('interface', 'method', 2, test: 'param'))

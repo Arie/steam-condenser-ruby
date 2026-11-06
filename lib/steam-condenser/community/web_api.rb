@@ -3,7 +3,7 @@
 #
 # Copyright (c) 2010-2015, Sebastian Staudt
 
-require 'multi_json'
+require 'json'
 require 'steam-condenser/community/uri'
 
 require 'steam-condenser/error/web_api'
@@ -78,7 +78,7 @@ module SteamCondenser::Community
     # @return [Hash<Symbol, Object>] The JSON data replied to the request
     def self.json(interface, method, version = 1, params = {})
       data = get :json, interface, method, version, params
-      MultiJson.load data, symbolize_keys: true
+      JSON.parse data, symbolize_names: true
     end
 
     # Fetches JSON data from Steam Web API using the specified interface,
